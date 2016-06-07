@@ -1,0 +1,16 @@
+this is gonna revolunize
+<%= link_to 'Register to attend Event', new_applicant_path %>
+<table>
+    <tr>
+    <th> So far participant list</th>
+    </tr>
+<% @applicants.each do |applicant| %>
+<tr>
+<td><%= applicant.title %></td>
+<td><%= applicant.name %></td>
+<td><%= applicant.college_name %></td>
+<td><%= applicant.dept %></td>
+<td><%= applicant.year %></td>
+</tr>
+  <% end %>
+  </table>
